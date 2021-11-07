@@ -1,0 +1,9 @@
+$pxToRem(pxVal) {
+  u = unit(pxVal)
+
+  if (u is 'px') {
+    return unit(pxVal / 16, 'rem')
+  } else {
+    return unit(value, u)
+  }
+}
